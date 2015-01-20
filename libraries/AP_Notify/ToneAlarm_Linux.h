@@ -18,9 +18,9 @@
 #ifndef __TONE_ALARM_Linux_H__
 #define __TONE_ALARM_Linux_H__
 
-#include "ToneAlarm_Linux.h"
+#include "NotifyDevice.h"
 
-class ToneAlarm_Linux
+class ToneAlarm_Linux: public NotifyDevice
 {
 public:
     ToneAlarm_Linux():

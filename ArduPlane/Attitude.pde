@@ -558,7 +558,7 @@ static bool is_flying(void)
     bool gpsMovement = (gps.status() < AP_GPS::GPS_OK_FIX_2D ||
                         gps.ground_speed() >= 5);
     
-    bool airspeedMovement = !airspeed.use() || airspeed.get_airspeed() >= 5;
+    bool airspeedMovement = (!ahrs.airspeed_sensor_enabled()) || airspeed.get_airspeed() >= 5;
     
     // we're more than 5m from the home altitude
     bool inAir = relative_altitude_abs_cm() > 500;
@@ -614,7 +614,7 @@ static bool suppress_throttle(void)
         // if we have an airspeed sensor, then check it too, and
         // require 5m/s. This prevents throttle up due to spiky GPS
         // groundspeed with bad GPS reception
-        if (!airspeed.use() || airspeed.get_airspeed() >= 5) {
+        if ((!ahrs.airspeed_sensor_enabled()) || airspeed.get_airspeed() >= 5) {
             // we're moving at more than 5 m/s
             throttle_suppressed = false;
             return false;        
@@ -684,33 +684,20 @@ static void flaperon_update(int8_t flap_percent)
       flaperons are implemented as a mixer between aileron and a
       percentage of flaps. Flap input can come from a manual channel
       or from auto flaps.
+
+      Use k_flaperon1 and k_flaperon2 channel trims to center servos.
+      Then adjust aileron trim for level flight (note that aileron trim is affected
+      by mixing gain). flapin_channel's trim is not used.
      */
-
-    // first map the amount of aileron roll to a 1000..2000 value. We
-    // center it on 1500 so that using trim on the roll channel will
-    // have an affect on the flaperon roll output. We also scale it
-    // for the roll min/max range, so that transmitters with a small
-    // range of outputs can command flaperons with full output range. 
-    ch1 = 1500 + ((channel_roll->radio_out - 1500) * 1000.0f / (channel_roll->radio_max - channel_roll->radio_min));
-
-    // now map flap percentage to a 1000..2000 value
+     
+    ch1 = channel_roll->radio_out;
+    // The *5 is to take a percentage to a value from -500 to 500 for the mixer
     ch2 = 1500 - flap_percent * 5;
-
-    // run the mixer
     channel_output_mixer(g.flaperon_output, ch1, ch2);
-
-    // the mixer gives us a value from 900 to 2100 for each channel We
-    // now need to map that onto a -4500 to 4500 angle. We use a ratio
-    // of 9 so that for a MIXING_GAIN of 1.0 we get pass-thru of
-    // ailerons with no flaps
-    ch1 = (ch1 - 1500) * 9;
-    ch2 = (ch2 - 1500) * 9;
-
-    // and now let the trims and ranges of the flaperon output
-    // channels take effect to map this to PWM values
-    RC_Channel_aux::set_servo_out(RC_Channel_aux::k_flaperon1, ch1);
-    RC_Channel_aux::set_servo_out(RC_Channel_aux::k_flaperon2, ch2);
+    RC_Channel_aux::set_radio_trimmed(RC_Channel_aux::k_flaperon1, ch1);
+    RC_Channel_aux::set_radio_trimmed(RC_Channel_aux::k_flaperon2, ch2);
 }
+
 
 /*****************************************
 * Set the flight control servos based on the current calculated values
@@ -882,7 +869,7 @@ static void set_servos(void)
 
     if (auto_throttle_mode) {
         int16_t flapSpeedSource = 0;
-        if (airspeed.use()) {
+        if (ahrs.airspeed_sensor_enabled()) {
             flapSpeedSource = target_airspeed_cm * 0.01f;
         } else {
             flapSpeedSource = aparm.throttle_cruise;

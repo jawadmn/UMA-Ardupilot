@@ -167,6 +167,9 @@ static void init_ardupilot()
             ahrs.set_compass(&compass);
         }
     }
+    
+    // make optflow available to libraries
+    ahrs.set_optflow(&optflow);
 
     // Register mavlink_delay_cb, which will run anytime you have
     // more than 5ms remaining in your call to hal.scheduler->delay
@@ -177,9 +180,6 @@ static void init_ardupilot()
 
     // GPS Initialization
     gps.init(&DataFlash);
-
-    //mavlink_system.sysid = MAV_SYSTEM_ID;				// Using g.sysid_this_mav
-    mavlink_system.compid = 1;          //MAV_COMP_ID_IMU;   // We do not check for comp id
 
     init_rc_in();               // sets up rc channels from radio
     init_rc_out();              // sets up the timer libs
@@ -218,6 +218,12 @@ static void init_ardupilot()
     // set the correct flight mode
     // ---------------------------
     reset_control_switch();
+
+    // initialise sensor
+#if OPTFLOW == ENABLED
+    optflow.init();
+#endif
+
 }
 
 //********************************************************************************
@@ -507,6 +513,7 @@ static void startup_INS_ground(bool do_accel_init)
     AP_InertialSensor::Start_style style;
     if (g.skip_gyro_cal && !do_accel_init) {
         style = AP_InertialSensor::WARM_START;
+        arming.set_skip_gyro_cal(true);
     } else {
         style = AP_InertialSensor::COLD_START;
     }
@@ -666,7 +673,9 @@ static bool should_log(uint32_t mask)
         // we have to set in_mavlink_delay to prevent logging while
         // writing headers
         in_mavlink_delay = true;
+        #if LOGGING_ENABLED == ENABLED
         start_logging();
+        #endif
         in_mavlink_delay = false;
     }
     return ret;
