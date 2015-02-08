@@ -44,6 +44,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\ArduCopter;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Common;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Common\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Progmem;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Progmem\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Menu;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Menu\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Param;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Param\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\StorageManager;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\StorageManager\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_AVR;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_AVR\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_AVR_SITL;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_AVR_SITL\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_PX4;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_PX4\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_VRBRAIN;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_VRBRAIN\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_FLYMAPLE;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_FLYMAPLE\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_Linux;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_Linux\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_Empty;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_HAL_Empty\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\GCS_MAVLink;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\GCS_MAVLink\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_SerialManager;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_SerialManager\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_GPS;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_GPS\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\DataFlash;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\DataFlash\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_ADC;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_ADC\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_ADC_AnalogSource;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_ADC_AnalogSource\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Baro;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Baro\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Compass;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Compass\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Math;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Math\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Curve;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Curve\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_InertialSensor;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_InertialSensor\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_AHRS;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_AHRS\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_NavEKF;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_NavEKF\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Mission;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Mission\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Rally;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Rally\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AC_PID;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AC_PID\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AC_AttitudeControl;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AC_AttitudeControl\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\RC_Channel;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\RC_Channel\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Motors;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Motors\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_RangeFinder;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_RangeFinder\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_OpticalFlow;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_OpticalFlow\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\Filter;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\Filter\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Buffer;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Buffer\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Relay;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Relay\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_ServoRelayEvents;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_ServoRelayEvents\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Camera;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Camera\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Mount;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Mount\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Airspeed;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Airspeed\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Vehicle;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Vehicle\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_InertialNav;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_InertialNav\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AC_WPNav;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AC_WPNav\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Declination;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Declination\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AC_Fence;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AC_Fence\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\SITL;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\SITL\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Scheduler;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Scheduler\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_RCMapper;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_RCMapper\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Notify;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Notify\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_BattMonitor;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_BattMonitor\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_BoardConfig;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_BoardConfig\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Frsky_Telem;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Frsky_Telem\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AC_Sprayer;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AC_Sprayer\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_EPM;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_EPM\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Parachute;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Parachute\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_LandingGear;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_LandingGear\utility;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Terrain;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries\AP_Terrain\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\apm\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\Jawad Nasser\Documents\GitHub\UMA-Ardupilot\libraries;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\;c:\program files (x86)\arduino\hardware\tools\avr\avr\;c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -64,6 +65,188 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="AP_State.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="ArduCopter.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Attitude.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands_logic.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="compassmot.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="compat.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_acro.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_althold.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_auto.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_autotune.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_circle.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_drift.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_flip.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_guided.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_land.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_loiter.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_poshold.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_rtl.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_sport.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_stabilize.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="crash_check.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="ekf_check.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="esc_calibration.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="events.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="failsafe.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="fence.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="flight_mode.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="GCS_Mavlink.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="heli.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="heli_control_acro.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="heli_control_stabilize.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="inertia.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="landing_gear.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="land_detector.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="leds.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Log.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="motors.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="motor_test.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="navigation.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Parameters.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="perf_info.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="position_vector.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="radio.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="sensors.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="setup.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="switches.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="system.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="test.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="tuning.pde">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="UserCode.pde">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="APM_Config.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="APM_Config_mavlink_hil.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="compat.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="config_channels.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="heli.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Parameters.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="UserVariables.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
