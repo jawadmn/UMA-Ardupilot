@@ -101,6 +101,7 @@
 // Application dependencies
 #include <GCS.h>
 #include <GCS_MAVLink.h>        // MAVLink GCS definitions
+#include <AP_SerialManager.h>   // Serial manager library
 #include <AP_GPS.h>             // ArduPilot GPS library
 #include <AP_GPS_Glitch.h>      // GPS glitch protection library
 #include <DataFlash.h>          // ArduPilot Mega Flash Memory Library
@@ -316,6 +317,7 @@ static float ekfNavVelGainScaler;
 ////////////////////////////////////////////////////////////////////////////////
 // GCS selection
 ////////////////////////////////////////////////////////////////////////////////
+static AP_SerialManager serial_manager;
 static const uint8_t num_gcs = MAVLINK_COMM_NUM_BUFFERS;
 static GCS_MAVLINK gcs[MAVLINK_COMM_NUM_BUFFERS];
 
@@ -561,13 +563,6 @@ static float baro_climbrate;        // barometer climbrate in cm/s
 // Current location of the copter
 static struct   Location current_loc;
 
-////////////////////////////////////////////////////////////////////////////////
-// Throttle integrator
-////////////////////////////////////////////////////////////////////////////////
-// This is a simple counter to track the amount of throttle used during flight
-// This could be useful later in determining and debuging current usage and predicting battery life
-static uint32_t throttle_integrator;
-
 
 ////////////////////////////////////////////////////////////////////////////////
 // Navigation Yaw control
@@ -666,7 +661,7 @@ static AP_HAL::AnalogSource* rssi_analog_source;
 // --------------------------------------
 #if MOUNT == ENABLED
 // current_loc uses the baro/gps soloution for altitude rather than gps only.
-static AP_Mount camera_mount(&current_loc, ahrs, 0);
+static AP_Mount camera_mount(ahrs, current_loc);
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -718,7 +713,7 @@ AP_Terrain terrain(ahrs, mission, rally);
 ////////////////////////////////////////////////////////////////////////////////
 // function definitions to keep compiler from complaining about undeclared functions
 ////////////////////////////////////////////////////////////////////////////////
-static void pre_arm_checks(bool display_failure);
+static bool pre_arm_checks(bool display_failure);
 
 ////////////////////////////////////////////////////////////////////////////////
 // Top-level logic
@@ -782,7 +777,7 @@ static const AP_Scheduler::Task scheduler_tasks[] PROGMEM = {
     { perf_update,        4000,     20 },
     { read_receiver_rssi,   40,      5 },
 #if FRSKY_TELEM_ENABLED == ENABLED
-    { telemetry_send,       80,     10 },	
+    { frsky_telemetry_send, 80,     10 },
 #endif
 #if EPM_ENABLED == ENABLED
     { epm_update,           40,     10 },
@@ -854,7 +849,7 @@ static const AP_Scheduler::Task scheduler_tasks[] PROGMEM = {
     { perf_update,        1000,     200 },
     { read_receiver_rssi,   10,      50 },
 #if FRSKY_TELEM_ENABLED == ENABLED
-    { telemetry_send,       20,     100 },	
+    { frsky_telemetry_send, 20,     100 },
 #endif
 #if EPM_ENABLED == ENABLED
     { epm_update,           10,      20 },
@@ -975,9 +970,8 @@ static void fast_loop()
     update_heli_control_dynamics();
 #endif //HELI_FRAME
 
-    // write out the servo PWM values
-    // ------------------------------
-    set_servos_4();
+    // send outputs to the motors library
+    motors_output();
 
     // Inertial Nav
     // --------------------
@@ -1025,7 +1019,7 @@ static void update_mount()
 {
 #if MOUNT == ENABLED
     // update camera mount's position
-    camera_mount.update_mount_position();
+    camera_mount.update();
 #endif
 
 #if CAMERA == ENABLED
@@ -1046,12 +1040,9 @@ static void update_batt_compass(void)
         compass.read();
         // log compass information
         if (should_log(MASK_LOG_COMPASS)) {
-            Log_Write_Compass();
+            DataFlash.Log_Write_Compass(compass);
         }
     }
-
-    // record throttle output
-    throttle_integrator += g.rc_3.servo_out;
 }
 
 // ten_hz_logging_loop
@@ -1144,14 +1135,17 @@ static void one_hz_loop()
     // update assigned functions and enable auxiliar servos
     RC_Channel_aux::enable_aux_servos();
 
-#if MOUNT == ENABLED
-    camera_mount.update_mount_type();
-#endif
-
     check_usb_mux();
 
 #if AP_TERRAIN_AVAILABLE
     terrain.update();
+#endif
+
+#if AC_FENCE == ENABLED
+    // set fence altitude limit in position controller
+    if ((fence.get_enabled_fences() & AC_FENCE_TYPE_ALT_MAX) != 0) {
+        pos_control.set_alt_max(fence.get_safe_alt()*100.0f);
+    }
 #endif
 }
 
@@ -1220,6 +1214,11 @@ static void update_GPS(void)
                 } else {
                     // start again if we lose 3d lock
                     ground_start_count = 10;
+                }
+            } else {
+                // update home position when not armed
+                if (!motors.armed()) {
+                    update_home();
                 }
             }
 

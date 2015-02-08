@@ -545,6 +545,7 @@ bool GCS_MAVLINK::try_send_message(enum ap_message id)
     case MSG_RETRY_DEFERRED:
     case MSG_TERRAIN:
     case MSG_OPTICAL_FLOW:
+    case MSG_GIMBAL_REPORT:
         break; // just here to prevent a warning
 	}
 
@@ -830,7 +831,7 @@ void GCS_MAVLINK::handleMessage(mavlink_message_t* msg)
                     }
                 } else {
                     // send the command to the camera mount
-                    camera_mount.set_roi_cmd(&roi_loc);
+                    camera_mount.set_roi_target(roi_loc);
                 }
                 result = MAV_RESULT_ACCEPTED;
                 break;

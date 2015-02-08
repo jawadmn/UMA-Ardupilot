@@ -10,7 +10,7 @@
 // rtl_init - initialise rtl controller
 static bool rtl_init(bool ignore_checks)
 {
-    if (GPS_ok() || ignore_checks) {
+    if (position_ok() || ignore_checks) {
         rtl_climb_start();
         return true;
     }else{
@@ -117,7 +117,8 @@ static void rtl_return_start()
     rally_point.alt = max(rally_point.alt, current_loc.alt);    // ensure we do not descend before reaching home
     Vector3f destination = pv_location_to_vector(rally_point);
 #else
-    Vector3f destination = Vector3f(0,0,get_RTL_alt());
+    Vector3f destination = pv_location_to_vector(ahrs.get_home());
+    destination.z = get_RTL_alt();
 #endif
 
     wp_nav.set_wp_destination(destination);
@@ -261,7 +262,7 @@ static void rtl_descent_run()
     float target_yaw_rate = 0;
 
     // if not auto armed set throttle to zero and exit immediately
-    if(!ap.auto_armed || !inertial_nav.position_ok()) {
+    if(!ap.auto_armed) {
         attitude_control.relax_bf_rate_controller();
         attitude_control.set_yaw_target_to_current_heading();
         attitude_control.set_throttle_out(0, false);

@@ -50,6 +50,8 @@
 #include <AP_Terrain.h>
 #include <AP_OpticalFlow.h>
 #include <Parameters.h>
+#include <AP_SerialManager.h>
+#include <RC_Channel.h>
 #include <stdio.h>
 #include <getopt.h>
 #include <errno.h>
@@ -355,7 +357,8 @@ void loop()
         }
         read_sensors(type);
 
-        if ((type == LOG_PLANE_ATTITUDE_MSG && LogReader.vehicle == LogReader::VEHICLE_PLANE) ||
+        if ((type == LOG_ATTITUDE_MSG) ||
+            (type == LOG_PLANE_ATTITUDE_MSG && LogReader.vehicle == LogReader::VEHICLE_PLANE) ||
             (type == LOG_COPTER_ATTITUDE_MSG && LogReader.vehicle == LogReader::VEHICLE_COPTER) ||
             (type == LOG_ROVER_ATTITUDE_MSG && LogReader.vehicle == LogReader::VEHICLE_ROVER)) {
 

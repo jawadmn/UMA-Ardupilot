@@ -13,6 +13,7 @@
 #include <AP_Baro.h>
 #include <AP_AHRS.h>
 #include "../AP_Airspeed/AP_Airspeed.h"
+#include <AP_BattMonitor.h>
 #include <stdint.h>
 
 #if CONFIG_HAL_BOARD == HAL_BOARD_PX4
@@ -79,6 +80,10 @@ public:
     void Log_Write_Camera(const AP_AHRS &ahrs, const AP_GPS &gps, const Location &current_loc);
     void Log_Write_ESC(void);
     void Log_Write_Airspeed(AP_Airspeed &airspeed);
+    void Log_Write_Attitude(AP_AHRS &ahrs, const Vector3f &targets);
+	void Log_Write_Current(const AP_BattMonitor &battery, int16_t throttle);
+    void Log_Write_Compass(const Compass &compass);
+    void Log_Write_Mode(uint8_t mode);
 
     bool logging_started(void) const { return log_write_started; }
 
@@ -126,26 +131,6 @@ protected:
 // this header
 #define HEAD_BYTE1  0xA3    // Decimal 163
 #define HEAD_BYTE2  0x95    // Decimal 149
-
-/*
-Format characters in the format string for binary log messages
-  b   : int8_t
-  B   : uint8_t
-  h   : int16_t
-  H   : uint16_t
-  i   : int32_t
-  I   : uint32_t
-  f   : float
-  n   : char[4]
-  N   : char[16]
-  Z   : char[64]
-  c   : int16_t * 100
-  C   : uint16_t * 100
-  e   : int32_t * 100
-  E   : uint32_t * 100
-  L   : int32_t latitude/longitude
-  M   : uint8_t flight mode
- */
 
 // structure used to define logging format
 struct LogStructure {
@@ -405,6 +390,51 @@ struct PACKED log_Camera {
     uint16_t yaw;
 };
 
+struct PACKED log_Attitude {
+    LOG_PACKET_HEADER;
+    uint32_t time_ms;
+    int16_t  control_roll;
+    int16_t  roll;
+    int16_t  control_pitch;
+    int16_t  pitch;
+    uint16_t control_yaw;
+    uint16_t yaw;
+    uint16_t error_rp;
+    uint16_t error_yaw;
+};
+
+struct PACKED log_Current {
+    LOG_PACKET_HEADER;
+    uint32_t time_ms;
+    int16_t  throttle;
+    int16_t  battery_voltage;
+    int16_t  current_amps;
+    uint16_t board_voltage;
+    float    current_total;
+	int16_t  battery2_voltage;
+};
+
+struct PACKED log_Compass {
+    LOG_PACKET_HEADER;
+    uint32_t time_ms;
+    int16_t  mag_x;
+    int16_t  mag_y;
+    int16_t  mag_z;
+    int16_t  offset_x;
+    int16_t  offset_y;
+    int16_t  offset_z;
+    int16_t  motor_offset_x;
+    int16_t  motor_offset_y;
+    int16_t  motor_offset_z;
+};
+
+struct PACKED log_Mode {
+    LOG_PACKET_HEADER;
+    uint32_t time_ms;
+    uint8_t mode;
+    uint8_t mode_num;
+};
+
 /*
   terrain log structure
  */
@@ -472,6 +502,26 @@ struct PACKED log_AIRSPEED {
     float   offset;
 };
 
+/*
+Format characters in the format string for binary log messages
+  b   : int8_t
+  B   : uint8_t
+  h   : int16_t
+  H   : uint16_t
+  i   : int32_t
+  I   : uint32_t
+  f   : float
+  n   : char[4]
+  N   : char[16]
+  Z   : char[64]
+  c   : int16_t * 100
+  C   : uint16_t * 100
+  e   : int32_t * 100
+  E   : uint32_t * 100
+  L   : int32_t latitude/longitude
+  M   : uint8_t flight mode
+ */
+
 // messages for all boards
 #define LOG_BASE_STRUCTURES \
     { LOG_FORMAT_MSG, sizeof(log_Format), \
@@ -501,7 +551,15 @@ struct PACKED log_AIRSPEED {
     { LOG_CAMERA_MSG, sizeof(log_Camera), \
       "CAM", "IHLLeeccC","GPSTime,GPSWeek,Lat,Lng,Alt,RelAlt,Roll,Pitch,Yaw" }, \
     { LOG_ARSP_MSG, sizeof(log_AIRSPEED), \
-      "ARSP",  "Iffcff",   "TimeMS,Airspeed,DiffPress,Temp,RawPress,Offset" }
+      "ARSP",  "Iffcff",   "TimeMS,Airspeed,DiffPress,Temp,RawPress,Offset" }, \
+    { LOG_CURRENT_MSG, sizeof(log_Current), \
+      "CURR", "IhhhHfh","TimeMS,Throttle,Volt,Curr,Vcc,CurrTot,Volt2" },\
+	{ LOG_ATTITUDE_MSG, sizeof(log_Attitude),\
+      "ATT", "IccccCCCC", "TimeMS,DesRoll,Roll,DesPitch,Pitch,DesYaw,Yaw,ErrRP,ErrYaw" }, \
+    { LOG_COMPASS_MSG, sizeof(log_Compass), \
+      "MAG", "Ihhhhhhhhh",    "TimeMS,MagX,MagY,MagZ,OfsX,OfsY,OfsZ,MOfsX,MOfsY,MOfsZ" }, \
+    { LOG_MODE_MSG, sizeof(log_Mode), \
+      "MODE", "IMB",         "TimeMS,Mode,ModeNum" }
 
 // messages for more advanced boards
 #define LOG_EXTRA_STRUCTURES \
@@ -548,7 +606,11 @@ struct PACKED log_AIRSPEED {
     { LOG_ESC8_MSG, sizeof(log_Esc), \
       "ESC8",  "Icccc", "TimeMS,RPM,Volt,Curr,Temp" }, \
     { LOG_EKF5_MSG, sizeof(log_EKF5), \
-      "EKF5","IBhhhcccCC","TimeMS,normInnov,FIX,FIY,AFI,HAGL,offset,RI,meaRng,errHAGL" }
+      "EKF5","IBhhhcccCC","TimeMS,normInnov,FIX,FIY,AFI,HAGL,offset,RI,meaRng,errHAGL" }, \
+    { LOG_COMPASS2_MSG, sizeof(log_Compass), \
+      "MAG2","Ihhhhhhhhh",    "TimeMS,MagX,MagY,MagZ,OfsX,OfsY,OfsZ,MOfsX,MOfsY,MOfsZ" }, \
+    { LOG_COMPASS3_MSG, sizeof(log_Compass), \
+      "MAG3","Ihhhhhhhhh",    "TimeMS,MagX,MagY,MagZ,OfsX,OfsY,OfsZ,MOfsX,MOfsY,MOfsZ" } \
 
 #if HAL_CPU_CLASS >= HAL_CPU_CLASS_75
 #define LOG_COMMON_STRUCTURES LOG_BASE_STRUCTURES, LOG_EXTRA_STRUCTURES
@@ -596,6 +658,12 @@ struct PACKED log_AIRSPEED {
 #define LOG_EKF5_MSG      162
 #define LOG_BAR2_MSG	  163
 #define LOG_ARSP_MSG      164
+#define LOG_ATTITUDE_MSG  165
+#define LOG_CURRENT_MSG   166
+#define LOG_COMPASS_MSG   167
+#define LOG_COMPASS2_MSG  168
+#define LOG_COMPASS3_MSG  169
+#define LOG_MODE_MSG      170
 
 // message types 200 to 210 reversed for GPS driver use
 // message types 211 to 220 reversed for autotune use

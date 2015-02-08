@@ -1,0 +1,3524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="followme\downstream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="followme\simplegcs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="followme\state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="followme\upstream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="followme\userinput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ac_attitudecontrol\AC_AttitudeControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ac_attitudecontrol\AC_AttitudeControl_Heli.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ac_attitudecontrol\AC_PosControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ac_fence\AC_Fence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ac_pid\AC_HELI_PID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ac_pid\AC_P.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ac_pid\AC_PID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ac_sprayer\AC_Sprayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ac_wpnav\AC_Circle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ac_wpnav\AC_WPNav.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\apm_control\AP_AutoTune.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\apm_control\AP_PitchController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\apm_control\AP_RollController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\apm_control\AP_SteerController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\apm_control\AP_YawController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\apm_obc\APM_OBC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\apm_pi\APM_PI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_adc\AP_ADC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_adc\AP_ADC_ADS7844.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_adc\AP_ADC_HIL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_adc_analogsource\AP_ADC_AnalogSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_ahrs\AP_AHRS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_ahrs\AP_AHRS_DCM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_ahrs\AP_AHRS_NavEKF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_airspeed\Airspeed_Calibration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_airspeed\AP_Airspeed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_airspeed\AP_Airspeed_analog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_airspeed\AP_Airspeed_I2C.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_airspeed\AP_Airspeed_PX4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_arming\AP_Arming.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_baro\AP_Baro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_baro\AP_Baro_Backend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_baro\AP_Baro_BMP085.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_baro\AP_Baro_Glitch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_baro\AP_Baro_HIL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_baro\AP_Baro_MS5611.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_baro\AP_Baro_PX4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_battmonitor\AP_BattMonitor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_battmonitor\AP_BattMonitor_Analog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_battmonitor\AP_BattMonitor_Backend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_battmonitor\AP_BattMonitor_SMBus_I2C.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_battmonitor\AP_BattMonitor_SMBus_PX4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_boardconfig\AP_BoardConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_camera\AP_Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_common\AP_Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_common\c++.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_compass\AP_Compass_AK8963.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_compass\AP_Compass_HIL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_compass\AP_Compass_HMC5843.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_compass\AP_Compass_PX4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_compass\AP_Compass_VRBRAIN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_compass\Compass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_compass\Compass_learn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_curve\AP_Curve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_declination\AP_Declination.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_epm\AP_EPM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_frsky_telem\AP_Frsky_Telem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_gps\AP_GPS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_gps\AP_GPS_Glitch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_gps\AP_GPS_MTK.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_gps\AP_GPS_MTK19.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_gps\AP_GPS_NMEA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_gps\AP_GPS_PX4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_gps\AP_GPS_SBP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_gps\AP_GPS_SIRF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_gps\AP_GPS_UBLOX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_gps\GPS_Backend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal\UARTDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal\Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal\utility\ftoa_engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal\utility\Print.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal\utility\print_vprintf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal\utility\utoa_invert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\AnalogIn_ADC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\AnalogIn_Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\GPIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\HAL_AVR_APM1_Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\HAL_AVR_APM2_Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\I2CDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\memcheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\RCInput_APM1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\RCInput_APM2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\RCOutput_APM1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\RCOutput_APM2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\Scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\Scheduler_Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\Semaphores.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\SPIDeviceManager_APM1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\SPIDeviceManager_APM2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\SPIDevice_SPI0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\SPIDevice_SPI2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\SPIDevice_SPI3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\Storage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\UARTDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\examples\lcdtest\LCrystal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\utility\ISRRegistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr\utility\pins_arduino_mega.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\AnalogIn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\HAL_AVR_SITL_Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\RCInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\RCOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\Scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\sitl_barometer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\sitl_compass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\sitl_gps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\sitl_ins.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\sitl_optical_flow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\SITL_State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\Storage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_avr_sitl\UARTDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\AnalogIn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\GPIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\HAL_Empty_Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\I2CDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\PrivateMember.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\RCInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\RCOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\Scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\Semaphores.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\SPIDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\Storage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_empty\UARTDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\AnalogIn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\AnalogSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\GPIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\HAL_FLYMAPLE_Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\I2CDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\RCInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\RCOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\Scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\Semaphores.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\SPIDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\Storage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\UARTDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\utility\EEPROM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_flymaple\utility\flash_stm32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\AnalogIn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\dsm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\GPIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\GPIO_BBB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\GPIO_RPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\HAL_Linux_Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\I2CDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\RCInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\RCInput_Navio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\RCInput_PRU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\RCInput_ZYNQ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\RCOutput_Navio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\RCOutput_PRU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\RCOutput_ZYNQ.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\sbus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\Scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\Semaphores.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\SPIDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\SPIUARTDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\Storage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\Storage_FRAM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\ToneAlarmDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\UARTDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_linux\Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_px4\AnalogIn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_px4\GPIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_px4\HAL_PX4_Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_px4\RCInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_px4\RCOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_px4\Scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_px4\Storage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_px4\UARTDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_px4\Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_vrbrain\AnalogIn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_vrbrain\GPIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_vrbrain\HAL_VRBRAIN_Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_vrbrain\RCInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_vrbrain\RCOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_vrbrain\Scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_vrbrain\Storage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_vrbrain\UARTDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_hal_vrbrain\Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialnav\AP_InertialNav.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialnav\AP_InertialNav_NavEKF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_Backend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_Flymaple.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_HIL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_L3G4200D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_L3GD20.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_LSM303D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_MPU6000.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_MPU9150.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_MPU9250.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_Oilpan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_PX4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_UserInteract_MAVLink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\AP_InertialSensor_UserInteract_Stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_inertialsensor\lsm9ds0\AP_InertialSensor_LSM9DS0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_l1_control\AP_L1_Control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_landinggear\AP_LandingGear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_limits\AP_Limits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_limits\AP_Limit_Altitude.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_limits\AP_Limit_Geofence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_limits\AP_Limit_GPSLock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_limits\AP_Limit_Module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_math\AP_Math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_math\edc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_math\location.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_math\matrix3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_math\polygon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_math\quaternion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_math\vector2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_math\vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_menu\AP_Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_mission\AP_Mission.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_motors\AP_MotorsCoax.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_motors\AP_MotorsHeli.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_motors\AP_MotorsHexa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_motors\AP_MotorsMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_motors\AP_MotorsOcta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_motors\AP_MotorsOctaQuad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_motors\AP_MotorsQuad.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_motors\AP_MotorsSingle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_motors\AP_MotorsTri.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_motors\AP_MotorsY6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_motors\AP_Motors_Class.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_mount\AP_Mount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_navekf\AP_NavEKF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\AP_BoardLED.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\AP_Notify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\Buzzer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\ExternalLED.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\NavioLED.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\NavioLED_I2C.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\RGBLed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\ToneAlarm_Linux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\ToneAlarm_PX4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\ToshibaLED.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\ToshibaLED_I2C.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_notify\ToshibaLED_PX4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_opticalflow\AP_OpticalFlow_HIL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_opticalflow\AP_OpticalFlow_PX4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_opticalflow\OpticalFlow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_opticalflow\OpticalFlow_backend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_parachute\AP_Parachute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_param\AP_Param.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_param\tools\eedump.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_param\tools\eedump_apparam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_perfmon\AP_PerfMon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_progmem\AP_Progmem_AVR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_rally\AP_Rally.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_rangefinder\AP_RangeFinder_analog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_rangefinder\AP_RangeFinder_MaxsonarI2CXL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_rangefinder\AP_RangeFinder_PulsedLightLRF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_rangefinder\AP_RangeFinder_PX4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_rangefinder\RangeFinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_rangefinder\RangeFinder_Backend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_rcmapper\AP_RCMapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_relay\AP_Relay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_scheduler\AP_Scheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_servorelayevents\AP_ServoRelayEvents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_tecs\AP_TECS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_terrain\AP_Terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_terrain\TerrainGCS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_terrain\TerrainIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_terrain\TerrainMission.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\ap_terrain\TerrainUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\dataflash\DataFlash_APM1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\dataflash\DataFlash_APM2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\dataflash\DataFlash_Block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\dataflash\DataFlash_Empty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\dataflash\DataFlash_File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\dataflash\DataFlash_SITL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\dataflash\LogFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\filter\DerivativeFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\filter\LowPassFilter2p.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\gcs_console\GCS_Console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\gcs_console\examples\console\simplegcs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\gcs_mavlink\GCS_Common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\gcs_mavlink\GCS_Logs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\gcs_mavlink\GCS_MAVLink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\gcs_mavlink\GCS_serial_control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\gcs_mavlink\MAVLink_routing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\pid\PID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\rc_channel\RC_Channel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\rc_channel\RC_Channel_aux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\sitl\SITL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libraries\storagemanager\StorageManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\apm2_2560_bootloader\stk500boot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega328p\Encoder-PPM-v3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega328p\Encoder-PPM.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\bootloaders\arduino-usbdfu\Arduino-usbdfu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\bootloaders\arduino-usbdfu\Descriptors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\board\Temperature.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\peripheral\Serial.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\peripheral\SerialStream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\peripheral\TWI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\Audio.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\CDC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\HID.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\MassStorage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\MIDI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\RNDIS.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\CDC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\HID.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\HIDParser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\MassStorage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\MIDI.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\Printer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\RNDIS.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\StillImage.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\ConfigDescriptor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\DeviceStandardReq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\Events.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\HostStandardReq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\USBTask.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\Device.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\Endpoint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\Host.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\Pipe.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\USBController.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\USBInterrupt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\template\Template_Endpoint_Control_R.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\template\Template_Endpoint_Control_W.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\template\Template_Endpoint_RW.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\template\Template_Pipe_RW.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\lufa\scheduler\Scheduler.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\projects\arduino-usbserial\Arduino-usbserial.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\atmega32u2\projects\arduino-usbserial\Descriptors.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\arduppm\workbasket\jeti_duplex\jetibox\JetiBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\flightgear\FGShim.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\linux_hal_essentials\pwmpru\pwmpru1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\linux_hal_essentials\rcinpru\rcinpru0.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\linux_hal_essentials\test_codes\rcin_test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\replay\LogReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="antennatracker\APM_Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="antennatracker\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="antennatracker\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="antennatracker\Parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apmrover2\APM_Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apmrover2\compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apmrover2\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apmrover2\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="apmrover2\Parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arducopter\APM_Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arducopter\APM_Config_mavlink_hil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arducopter\compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arducopter\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arducopter\config_channels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arducopter\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arducopter\heli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arducopter\Parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arducopter\UserVariables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arduplane\APM_Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arduplane\compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arduplane\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arduplane\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arduplane\Parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="followme\arducopter_defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="followme\downstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="followme\simplegcs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="followme\state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="followme\upstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="followme\userinput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ac_attitudecontrol\AC_AttitudeControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ac_attitudecontrol\AC_AttitudeControl_Heli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ac_attitudecontrol\AC_PosControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ac_fence\AC_Fence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ac_pid\AC_HELI_PID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ac_pid\AC_P.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ac_pid\AC_PID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ac_sprayer\AC_Sprayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ac_wpnav\AC_Circle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ac_wpnav\AC_WPNav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\apm_control\APM_Control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\apm_control\AP_AutoTune.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\apm_control\AP_PitchController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\apm_control\AP_RollController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\apm_control\AP_SteerController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\apm_control\AP_YawController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\apm_obc\APM_OBC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\apm_pi\APM_PI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_adc\AP_ADC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_adc\AP_ADC_ADS7844.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_adc\AP_ADC_HIL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_adc_analogsource\AP_ADC_AnalogSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_ahrs\AP_AHRS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_ahrs\AP_AHRS_DCM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_ahrs\AP_AHRS_NavEKF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_airspeed\AP_Airspeed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_airspeed\AP_Airspeed_analog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_airspeed\AP_Airspeed_Backend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_airspeed\AP_Airspeed_I2C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_airspeed\AP_Airspeed_I2C_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_airspeed\AP_Airspeed_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_arming\AP_Arming.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_baro\AP_Baro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_baro\AP_Baro_Backend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_baro\AP_Baro_BMP085.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_baro\AP_Baro_Glitch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_baro\AP_Baro_HIL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_baro\AP_Baro_MS5611.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_baro\AP_Baro_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_battmonitor\AP_BattMonitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_battmonitor\AP_BattMonitor_Analog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_battmonitor\AP_BattMonitor_Backend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_battmonitor\AP_BattMonitor_SMBus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_battmonitor\AP_BattMonitor_SMBus_I2C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_battmonitor\AP_BattMonitor_SMBus_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_boardconfig\AP_BoardConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_buffer\AP_Buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_camera\AP_Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_common\AP_Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_common\AP_Test.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_common\Arduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_compass\AP_Compass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_compass\AP_Compass_AK8963.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_compass\AP_Compass_HIL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_compass\AP_Compass_HMC5843.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_compass\AP_Compass_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_compass\AP_Compass_VRBRAIN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_compass\Compass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_curve\AP_Curve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_declination\AP_Declination.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_epm\AP_EPM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_frsky_telem\AP_Frsky_Telem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\AP_GPS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\AP_GPS_Glitch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\AP_GPS_MTK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\AP_GPS_MTK19.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\AP_GPS_MTK_Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\AP_GPS_NMEA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\AP_GPS_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\AP_GPS_SBP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\AP_GPS_SIRF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\AP_GPS_UBLOX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\GPS_Backend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_gps\GPS_detect_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\AnalogIn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\AP_HAL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\AP_HAL_Boards.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\AP_HAL_Macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\AP_HAL_Namespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\GPIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\HAL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\I2CDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\RCInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\RCOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\Scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\Semaphores.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\SPIDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\Storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\UARTDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\utility\BetterStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\utility\FastDelegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\utility\ftoa_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\utility\Print.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\utility\print_vprintf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\utility\RingBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\utility\Stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal\utility\xtoa_fast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\AnalogIn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\AP_HAL_AVR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\AP_HAL_AVR_Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\AP_HAL_AVR_Namespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\AP_HAL_AVR_private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\GPIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\HAL_AVR_APM1_Class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\HAL_AVR_APM2_Class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\I2CDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\memcheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\RCInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\RCOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\Scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\Semaphores.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\SPIDevices.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\SPIDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\Storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\UARTDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\examples\lcdtest\LCrystal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\examples\spidriver_mpu6000\MPU6000.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\utility\ISRRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr\utility\pins_arduino_mega.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\AnalogIn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\AP_HAL_AVR_SITL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\AP_HAL_AVR_SITL_Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\AP_HAL_AVR_SITL_Namespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\AP_HAL_AVR_SITL_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\HAL_AVR_SITL_Class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\RCInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\RCOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\Scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\SITL_State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\Storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\UARTDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_avr_sitl\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\AnalogIn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\AP_HAL_Empty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\AP_HAL_Empty_Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\AP_HAL_Empty_Namespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\AP_HAL_Empty_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\GPIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\HAL_Empty_Class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\I2CDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\PrivateMember.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\RCInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\RCOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\Scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\Semaphores.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\SPIDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\Storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\UARTDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_empty\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\AnalogIn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\AP_HAL_FLYMAPLE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\AP_HAL_FLYMAPLE_Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\AP_HAL_FLYMAPLE_Namespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\AP_HAL_FLYMAPLE_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\FlymapleWirish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\GPIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\HAL_FLYMAPLE_Class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\I2CDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\RCInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\RCOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\Scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\Semaphores.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\SPIDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\Storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\UARTDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\utility\EEPROM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\utility\flash_stm32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\utility\flash_stm32F1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_flymaple\utility\flash_stm32F2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\AnalogIn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\AP_HAL_Linux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\AP_HAL_Linux_Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\AP_HAL_Linux_Namespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\AP_HAL_Linux_Private.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\dsm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\GPIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\GPIO_BBB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\GPIO_RPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\HAL_Linux_Class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\I2CDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\RCInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\RCInput_Navio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\RCInput_PRU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\RCInput_ZYNQ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\RCOutput_Navio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\RCOutput_PRU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\RCOutput_ZYNQ.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\sbus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\Scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\Semaphores.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\SPIDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\SPIUARTDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\Storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\Storage_FRAM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\ToneAlarmDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\UARTDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_linux\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\AnalogIn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\AP_HAL_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\AP_HAL_PX4_Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\AP_HAL_PX4_Namespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\GPIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\HAL_PX4_Class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\RCInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\RCOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\Scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\Storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\UARTDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_px4\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\AnalogIn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\AP_HAL_VRBRAIN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\AP_HAL_VRBRAIN_Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\AP_HAL_VRBRAIN_Namespace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\GPIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\HAL_VRBRAIN_Class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\RCInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\RCOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\Scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\Storage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\UARTDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_hal_vrbrain\Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialnav\AP_InertialNav.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialnav\AP_InertialNav_NavEKF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_Backend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_Flymaple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_HIL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_L3G4200D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_L3GD20.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_LSM303D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_MPU6000.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_MPU9150.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_MPU9250.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_Oilpan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_UserInteract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_UserInteract_MAVLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\AP_InertialSensor_UserInteract_Stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_inertialsensor\lsm9ds0\AP_InertialSensor_LSM9DS0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_l1_control\AP_L1_Control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_landinggear\AP_LandingGear.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_limits\AP_Limits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_limits\AP_Limit_Altitude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_limits\AP_Limit_Geofence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_limits\AP_Limit_GPSLock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_limits\AP_Limit_Module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_math\AP_Math.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_math\AP_Math_AVR_Compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_math\edc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_math\matrix3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_math\polygon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_math\quaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_math\rotations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_math\vector2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_math\vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_math\vectorN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_menu\AP_Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_mission\AP_Mission.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_Motors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_MotorsCoax.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_MotorsHeli.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_MotorsHexa.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_MotorsMatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_MotorsOcta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_MotorsOctaQuad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_MotorsQuad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_MotorsSingle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_MotorsTri.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_MotorsY6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_motors\AP_Motors_Class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_mount\AP_Mount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_navekf\AP_NavEKF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_navekf\AP_Nav_Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_navigation\AP_Navigation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\AP_BoardLED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\AP_Notify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\Buzzer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\ExternalLED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\NavioLED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\NavioLED_I2C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\NotifyDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\RGBLed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\ToneAlarm_Linux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\ToneAlarm_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\ToshibaLED.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\ToshibaLED_I2C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_notify\ToshibaLED_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_opticalflow\AP_OpticalFlow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_opticalflow\AP_OpticalFlow_HIL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_opticalflow\AP_OpticalFlow_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_opticalflow\OpticalFlow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_opticalflow\OpticalFlow_backend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_parachute\AP_Parachute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_param\AP_Param.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_perfmon\AP_PerfMon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_progmem\AP_Progmem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_progmem\AP_Progmem_AVR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_progmem\AP_Progmem_Identity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_rally\AP_Rally.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_rangefinder\AP_RangeFinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_rangefinder\AP_RangeFinder_analog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_rangefinder\AP_RangeFinder_MaxsonarI2CXL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_rangefinder\AP_RangeFinder_PulsedLightLRF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_rangefinder\AP_RangeFinder_PX4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_rangefinder\RangeFinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_rangefinder\RangeFinder_Backend.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_rcmapper\AP_RCMapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_relay\AP_Relay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_scheduler\AP_Scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_servorelayevents\AP_ServoRelayEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_spdhgtcontrol\AP_SpdHgtControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_tecs\AP_TECS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_terrain\AP_Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\ap_vehicle\AP_Vehicle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\dataflash\DataFlash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\dataflash\DataFlash_APM1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\dataflash\DataFlash_APM2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\dataflash\DataFlash_Block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\dataflash\DataFlash_Empty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\dataflash\DataFlash_File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\dataflash\DataFlash_SITL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\filter\AverageFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\filter\Butter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\filter\DerivativeFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\filter\Filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\filter\FilterClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\filter\FilterWithBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\filter\LowPassFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\filter\LowPassFilter2p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\filter\ModeFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_console\GCS_Console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_console\examples\console\simplegcs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\GCS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\GCS_MAVLink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\MAVLink_routing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\checksum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\mavlink_helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\mavlink_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\ardupilotmega.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_ahrs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_ap_adc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_digicam_configure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_digicam_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_fence_fetch_point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_fence_point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_fence_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_hwstatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_limits_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_meminfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_mount_configure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_mount_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_mount_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_radio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_sensor_offsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_set_mag_offsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\mavlink_msg_simstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\testsuite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\ardupilotmega\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_action.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_action_ack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_attitude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_auth_key.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_boot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_change_operator_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_change_operator_control_ack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_command_ack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_control_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_debug_vect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_global_position.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_global_position_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_gps_local_origin_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_gps_raw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_gps_raw_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_gps_set_global_origin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_gps_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_heartbeat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_hil_controls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_hil_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_local_position.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_local_position_setpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_local_position_setpoint_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_manual_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_named_value_float.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_named_value_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_nav_controller_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_object_detection_event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_optical_flow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_param_request_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_param_request_read.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_param_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_param_value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_ping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_position_target.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_raw_imu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_raw_pressure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_rc_channels_override.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_rc_channels_raw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_rc_channels_scaled.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_request_data_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_roll_pitch_yaw_speed_thrust_setpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_roll_pitch_yaw_thrust_setpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_safety_allowed_area.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_safety_set_allowed_area.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_scaled_imu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_scaled_pressure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_servo_output_raw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_set_altitude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_set_mode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_set_nav_mode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_set_roll_pitch_yaw_speed_thrust.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_set_roll_pitch_yaw_thrust.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_state_correction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_statustext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_system_time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_system_time_utc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_sys_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_vfr_hud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_waypoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_waypoint_ack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_waypoint_clear_all.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_waypoint_count.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_waypoint_current.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_waypoint_reached.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_waypoint_request.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_waypoint_request_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\mavlink_msg_waypoint_set_current.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\testsuite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v0.9\common\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\checksum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\mavlink_conversions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\mavlink_helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\mavlink_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\mavlink_protobuf_manager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\ardupilotmega.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_ahrs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_ahrs2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_airspeed_autocal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_ap_adc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_battery2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_camera_feedback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_camera_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_compassmot_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_data16.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_data32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_data64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_data96.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_digicam_configure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_digicam_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_fence_fetch_point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_fence_point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_fence_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_hwstatus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_limits_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_meminfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_mount_configure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_mount_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_mount_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_radio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_rally_fetch_point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_rally_point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_rangefinder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_sensor_offsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_set_mag_offsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_simstate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\mavlink_msg_wind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\testsuite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\ardupilotmega\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_attitude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_attitude_quaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_attitude_quaternion_cov.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_attitude_target.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_auth_key.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_autopilot_version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_battery_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_change_operator_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_change_operator_control_ack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_command_ack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_command_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_command_long.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_data_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_data_transmission_handshake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_debug_vect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_distance_sensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_encapsulated_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_file_transfer_protocol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_global_position_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_global_position_int_cov.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_global_vision_position_estimate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_gps2_raw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_gps2_rtk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_gps_global_origin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_gps_inject_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_gps_raw_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_gps_rtk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_gps_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_heartbeat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_highres_imu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_hil_controls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_hil_gps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_hil_optical_flow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_hil_rc_inputs_raw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_hil_sensor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_hil_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_hil_state_quaternion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_local_position_ned.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_local_position_ned_cov.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_local_position_ned_system_global_offset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_log_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_log_entry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_log_erase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_log_request_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_log_request_end.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_log_request_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_manual_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_manual_setpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_memory_vect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_ack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_clear_all.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_count.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_current.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_item_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_item_reached.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_request.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_request_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_request_partial_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_set_current.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_mission_write_partial_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_named_value_float.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_named_value_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_nav_controller_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_optical_flow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_optical_flow_rad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_param_request_list.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_param_request_read.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_param_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_param_value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_ping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_position_target_global_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_position_target_local_ned.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_power_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_radio_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_raw_imu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_raw_pressure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_rc_channels.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_rc_channels_override.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_rc_channels_raw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_rc_channels_scaled.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_request_data_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_safety_allowed_area.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_safety_set_allowed_area.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_scaled_imu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_scaled_imu2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_scaled_pressure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_scaled_pressure2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_serial_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_servo_output_raw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_set_attitude_target.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_set_gps_global_origin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_set_mode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_set_position_target_global_int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_set_position_target_local_ned.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_sim_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_statustext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_system_time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_sys_status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_terrain_check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_terrain_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_terrain_report.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_terrain_request.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_timesync.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_v2_extension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_vfr_hud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_vicon_position_estimate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_vision_position_estimate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\mavlink_msg_vision_speed_estimate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\testsuite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\gcs_mavlink\include\mavlink\v1.0\common\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\pid\PID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\rc_channel\RC_Channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\rc_channel\RC_Channel_aux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sitl\SITL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\storagemanager\StorageManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\apm2_2560_bootloader\avrinterruptnames.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\apm2_2560_bootloader\command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\bootloaders\arduino-usbdfu\Arduino-usbdfu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\bootloaders\arduino-usbdfu\Descriptors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\bootloaders\arduino-usbdfu\board\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\Version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\common\Attributes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\common\BoardTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\common\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\Dataflash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\Joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\Temperature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\atavrusbrf01\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\atavrusbrf01\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\benito\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\benito\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\bumbleb\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\bumbleb\Joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\bumbleb\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\evk527\AT45DB321C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\evk527\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\evk527\Dataflash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\evk527\Joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\evk527\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\jmdbu2\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\jmdbu2\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\rzusbstick\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\stk525\AT45DB321C.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\stk525\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\stk525\Dataflash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\stk525\Joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\stk525\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\stk526\AT45DB642D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\stk526\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\stk526\Dataflash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\stk526\Joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\stk526\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\teensy\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\usbkey\AT45DB642D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\usbkey\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\usbkey\Dataflash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\usbkey\Joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\usbkey\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\usbtinymkii\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\usbtinymkii\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\xplain\AT45DB642D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\xplain\Dataflash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\board\xplain\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\misc\TerminalCodes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\peripheral\ADC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\peripheral\Serial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\peripheral\SerialStream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\peripheral\SPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\peripheral\TWI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\peripheral\avru4u6u7\ADC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\peripheral\avru4u6u7\TWI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\USB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\Audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\CDC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\HID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\MassStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\MIDI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\Printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\RNDIS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\StillImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\common\Audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\common\CDC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\common\HID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\common\MassStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\common\MIDI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\common\Printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\common\RNDIS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\common\RNDISConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\common\StillImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\Audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\CDC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\HID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\MassStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\MIDI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\device\RNDIS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\CDC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\HID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\HIDParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\HIDReportData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\MassStorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\MIDI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\Printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\RNDIS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\class\host\StillImage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\ConfigDescriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\DeviceStandardReq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\Events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\HostStandardReq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\StdDescriptors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\StdRequestType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\StreamCallbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\USBMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\highlevel\USBTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\Device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\Endpoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\Host.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\OTG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\Pipe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\USBController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\drivers\usb\lowlevel\USBInterrupt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\driverstubs\Buttons.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\driverstubs\Dataflash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\driverstubs\Joystick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\driverstubs\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\lufa\scheduler\Scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\projects\arduino-usbserial\Arduino-usbserial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\projects\arduino-usbserial\Descriptors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\projects\arduino-usbserial\board\LEDs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\atmega32u2\projects\arduino-usbserial\lib\LightweightRingBuff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\libraries\PPM_Encoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\libraries\PPM_Encoder_v3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\workbasket\experimental\PPM_Encoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\arduppm\workbasket\jeti_duplex\jetibox\JetiBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\linux_hal_essentials\pwmpru\linux_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\linux_hal_essentials\pwmpru\prucomm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\linux_hal_essentials\pwmpru\pru_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\linux_hal_essentials\rcinpru\linux_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\linux_hal_essentials\rcinpru\prucomm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\linux_hal_essentials\rcinpru\pru_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\replay\LogReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\replay\Parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\vartest\APM_Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\vartest\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\vartest\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\vartest\Parameters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mk\px4\bootloader\px4fmuv2_bl.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="mk\px4\bootloader\px4fmu_bl.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="antennatracker\AntennaTracker.pde" />
+    <None Include="antennatracker\control_auto.pde" />
+    <None Include="antennatracker\control_manual.pde" />
+    <None Include="antennatracker\control_scan.pde" />
+    <None Include="antennatracker\GCS_Mavlink.pde" />
+    <None Include="antennatracker\Parameters.pde" />
+    <None Include="antennatracker\radio.pde" />
+    <None Include="antennatracker\sensors.pde" />
+    <None Include="antennatracker\servos.pde" />
+    <None Include="antennatracker\system.pde" />
+    <None Include="antennatracker\tracking.pde" />
+    <None Include="apmrover2\APMrover2.pde" />
+    <None Include="apmrover2\commands.pde" />
+    <None Include="apmrover2\commands_logic.pde" />
+    <None Include="apmrover2\commands_process.pde" />
+    <None Include="apmrover2\compat.pde" />
+    <None Include="apmrover2\control_modes.pde" />
+    <None Include="apmrover2\events.pde" />
+    <None Include="apmrover2\failsafe.pde" />
+    <None Include="apmrover2\GCS_Mavlink.pde" />
+    <None Include="apmrover2\Log.pde" />
+    <None Include="apmrover2\navigation.pde" />
+    <None Include="apmrover2\Parameters.pde" />
+    <None Include="apmrover2\radio.pde" />
+    <None Include="apmrover2\sensors.pde" />
+    <None Include="apmrover2\setup.pde" />
+    <None Include="apmrover2\Steering.pde" />
+    <None Include="apmrover2\system.pde" />
+    <None Include="apmrover2\test.pde" />
+    <None Include="arducopter\AP_State.pde" />
+    <None Include="arducopter\ArduCopter.pde" />
+    <None Include="arducopter\Attitude.pde" />
+    <None Include="arducopter\commands.pde" />
+    <None Include="arducopter\commands_logic.pde" />
+    <None Include="arducopter\compassmot.pde" />
+    <None Include="arducopter\compat.pde" />
+    <None Include="arducopter\control_acro.pde" />
+    <None Include="arducopter\control_althold.pde" />
+    <None Include="arducopter\control_auto.pde" />
+    <None Include="arducopter\control_autotune.pde" />
+    <None Include="arducopter\control_circle.pde" />
+    <None Include="arducopter\control_drift.pde" />
+    <None Include="arducopter\control_flip.pde" />
+    <None Include="arducopter\control_guided.pde" />
+    <None Include="arducopter\control_land.pde" />
+    <None Include="arducopter\control_loiter.pde" />
+    <None Include="arducopter\control_poshold.pde" />
+    <None Include="arducopter\control_rtl.pde" />
+    <None Include="arducopter\control_sport.pde" />
+    <None Include="arducopter\control_stabilize.pde" />
+    <None Include="arducopter\crash_check.pde" />
+    <None Include="arducopter\ekf_check.pde" />
+    <None Include="arducopter\esc_calibration.pde" />
+    <None Include="arducopter\events.pde" />
+    <None Include="arducopter\failsafe.pde" />
+    <None Include="arducopter\fence.pde" />
+    <None Include="arducopter\flight_mode.pde" />
+    <None Include="arducopter\GCS_Mavlink.pde" />
+    <None Include="arducopter\heli.pde" />
+    <None Include="arducopter\heli_control_acro.pde" />
+    <None Include="arducopter\heli_control_stabilize.pde" />
+    <None Include="arducopter\inertia.pde" />
+    <None Include="arducopter\landing_gear.pde" />
+    <None Include="arducopter\land_detector.pde" />
+    <None Include="arducopter\leds.pde" />
+    <None Include="arducopter\Log.pde" />
+    <None Include="arducopter\motors.pde" />
+    <None Include="arducopter\motor_test.pde" />
+    <None Include="arducopter\navigation.pde" />
+    <None Include="arducopter\Parameters.pde" />
+    <None Include="arducopter\perf_info.pde" />
+    <None Include="arducopter\position_vector.pde" />
+    <None Include="arducopter\radio.pde" />
+    <None Include="arducopter\sensors.pde" />
+    <None Include="arducopter\setup.pde" />
+    <None Include="arducopter\switches.pde" />
+    <None Include="arducopter\system.pde" />
+    <None Include="arducopter\test.pde" />
+    <None Include="arducopter\tuning.pde" />
+    <None Include="arducopter\UserCode.pde" />
+    <None Include="arduplane\altitude.pde" />
+    <None Include="arduplane\ArduPlane.pde" />
+    <None Include="arduplane\Attitude.pde" />
+    <None Include="arduplane\climb_rate.pde" />
+    <None Include="arduplane\commands.pde" />
+    <None Include="arduplane\commands_logic.pde" />
+    <None Include="arduplane\commands_process.pde" />
+    <None Include="arduplane\compat.pde" />
+    <None Include="arduplane\control_modes.pde" />
+    <None Include="arduplane\events.pde" />
+    <None Include="arduplane\failsafe.pde" />
+    <None Include="arduplane\GCS_Mavlink.pde" />
+    <None Include="arduplane\geofence.pde" />
+    <None Include="arduplane\landing.pde" />
+    <None Include="arduplane\Log.pde" />
+    <None Include="arduplane\navigation.pde" />
+    <None Include="arduplane\Parameters.pde" />
+    <None Include="arduplane\px4_mixer.pde" />
+    <None Include="arduplane\radio.pde" />
+    <None Include="arduplane\sensors.pde" />
+    <None Include="arduplane\setup.pde" />
+    <None Include="arduplane\system.pde" />
+    <None Include="arduplane\takeoff.pde" />
+    <None Include="arduplane\test.pde" />
+    <None Include="followme\FollowMe.pde" />
+    <None Include="libraries\ac_attitudecontrol\examples\ac_attitudecontrol_test\AC_AttitudeControl_test.pde" />
+    <None Include="libraries\ac_fence\examples\ac_fence_test\AC_Fence_test.pde" />
+    <None Include="libraries\ac_pid\examples\ac_pid_test\AC_PID_test.pde" />
+    <None Include="libraries\ac_sprayer\examples\ac_sprayer_test\AC_Sprayer_test.pde" />
+    <None Include="libraries\ac_wpnav\examples\ac_wpnav_test\AC_WPNav_test.pde" />
+    <None Include="libraries\apm_obc\failsafe_board\Failsafe_Board.pde" />
+    <None Include="libraries\ap_adc\examples\ap_adc_test\AP_ADC_test.pde" />
+    <None Include="libraries\ap_ahrs\examples\ahrs_test\AHRS_Test.pde" />
+    <None Include="libraries\ap_airspeed\examples\airspeed\Airspeed.pde" />
+    <None Include="libraries\ap_baro\examples\baro_generic\BARO_generic.pde" />
+    <None Include="libraries\ap_battmonitor\examples\ap_battmonitor_test\AP_BattMonitor_test.pde" />
+    <None Include="libraries\ap_common\examples\ap_common\AP_Common.pde" />
+    <None Include="libraries\ap_compass\examples\ap_compass_test\AP_Compass_test.pde" />
+    <None Include="libraries\ap_declination\examples\ap_declination_test\AP_Declination_test.pde" />
+    <None Include="libraries\ap_gps\examples\gps_auto_test\GPS_AUTO_test.pde" />
+    <None Include="libraries\ap_gps\examples\gps_ublox_passthrough\GPS_UBLOX_passthrough.pde" />
+    <None Include="libraries\ap_hal\examples\analogin\AnalogIn.pde" />
+    <None Include="libraries\ap_hal\examples\printf\Printf.pde" />
+    <None Include="libraries\ap_hal\examples\rcinput\RCInput.pde" />
+    <None Include="libraries\ap_hal\examples\rcoutput\RCOutput.pde" />
+    <None Include="libraries\ap_hal\examples\uart_test\UART_test.pde" />
+    <None Include="libraries\ap_hal_avr\examples\arducopterlibs\ArduCopterLibs.pde" />
+    <None Include="libraries\ap_hal_avr\examples\arduplanelibs\ArduPlaneLibs.pde" />
+    <None Include="libraries\ap_hal_avr\examples\blink\Blink.pde" />
+    <None Include="libraries\ap_hal_avr\examples\console\Console.pde" />
+    <None Include="libraries\ap_hal_avr\examples\i2cdriver_hmc5883l\I2CDriver_HMC5883L.pde" />
+    <None Include="libraries\ap_hal_avr\examples\lcdtest\LCDTest.pde" />
+    <None Include="libraries\ap_hal_avr\examples\rcinputtest\RCInputTest.pde" />
+    <None Include="libraries\ap_hal_avr\examples\rcjittertest\RCJitterTest.pde" />
+    <None Include="libraries\ap_hal_avr\examples\rcpassthroughtest\RCPassthroughTest.pde" />
+    <None Include="libraries\ap_hal_avr\examples\scheduler\Scheduler.pde" />
+    <None Include="libraries\ap_hal_avr\examples\semaphore\Semaphore.pde" />
+    <None Include="libraries\ap_hal_avr\examples\spidriver_mpu6000\SPIDriver_MPU6000.pde" />
+    <None Include="libraries\ap_hal_avr\examples\storage\Storage.pde" />
+    <None Include="libraries\ap_hal_avr\examples\uartdriver\UARTDriver.pde" />
+    <None Include="libraries\ap_hal_avr\examples\utilitystringtest\UtilityStringTest.pde" />
+    <None Include="libraries\ap_hal_empty\examples\empty_example\empty_example.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\analogin\AnalogIn.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\ap_baro_bmp085_test\AP_Baro_BMP085_test.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\blink\Blink.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\console\Console.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\empty_example\empty_example.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\i2cdriver_hmc5883l\I2CDriver_HMC5883L.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\rcinput\RCInput.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\rcpassthroughtest\RCPassthroughTest.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\scheduler\Scheduler.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\semaphore\Semaphore.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\spidriver\SPIDriver.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\storage\Storage.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\uartdriver\UARTDriver.pde" />
+    <None Include="libraries\ap_hal_flymaple\examples\utilitystringtest\UtilityStringTest.pde" />
+    <None Include="libraries\ap_hal_linux\examples\bustest\BusTest.pde" />
+    <None Include="libraries\ap_hal_px4\examples\simple\simple.pde" />
+    <None Include="libraries\ap_inertialnav\examples\ap_inertialnav_test\AP_InertialNav_test.pde" />
+    <None Include="libraries\ap_inertialsensor\examples\ins_generic\INS_generic.pde" />
+    <None Include="libraries\ap_inertialsensor\examples\vibtest\VibTest.pde" />
+    <None Include="libraries\ap_math\examples\eulers\eulers.pde" />
+    <None Include="libraries\ap_math\examples\location\location.pde" />
+    <None Include="libraries\ap_math\examples\polygon\polygon.pde" />
+    <None Include="libraries\ap_math\examples\rotations\rotations.pde" />
+    <None Include="libraries\ap_menu\examples\menu\menu.pde" />
+    <None Include="libraries\ap_mission\examples\ap_mission_test\AP_Mission_test.pde" />
+    <None Include="libraries\ap_motors\examples\ap_motors_test\AP_Motors_test.pde" />
+    <None Include="libraries\ap_motors\examples\ap_motors_time_test\AP_Motors_Time_test.pde" />
+    <None Include="libraries\ap_mount\examples\trivial_ap_mount\trivial_AP_Mount.pde" />
+    <None Include="libraries\ap_notify\examples\ap_notify_test\AP_Notify_test.pde" />
+    <None Include="libraries\ap_notify\examples\toshibaled_test\ToshibaLED_test.pde" />
+    <None Include="libraries\ap_opticalflow\examples\ap_opticalflow_test\AP_OpticalFlow_test.pde" />
+    <None Include="libraries\ap_parachute\examples\ap_parachute_test\AP_Parachute_test.pde" />
+    <None Include="libraries\ap_perfmon\ap_perfmon_test\AP_PerfMon_test.pde" />
+    <None Include="libraries\ap_rangefinder\examples\rfind_test\RFIND_test.pde" />
+    <None Include="libraries\ap_scheduler\examples\scheduler_test\Scheduler_test.pde" />
+    <None Include="libraries\dataflash\examples\dataflash_test\DataFlash_test.pde" />
+    <None Include="libraries\filter\examples\derivative\Derivative.pde" />
+    <None Include="libraries\filter\examples\filter\Filter.pde" />
+    <None Include="libraries\filter\examples\lowpassfilter\LowPassFilter.pde" />
+    <None Include="libraries\filter\examples\lowpassfilter2p\LowPassFilter2p.pde" />
+    <None Include="libraries\gcs_console\examples\console\Console.pde" />
+    <None Include="libraries\gcs_mavlink\examples\routing\routing.pde" />
+    <None Include="libraries\pid\examples\pid\pid.pde" />
+    <None Include="libraries\rc_channel\examples\rc_channel\RC_Channel.pde" />
+    <None Include="libraries\storagemanager\examples\storagetest\StorageTest.pde" />
+    <None Include="tools\apm_radio_test\APM_radio_test.pde" />
+    <None Include="tools\ardupilotmega_demo\ArduPilotMega_demo.pde" />
+    <None Include="tools\ardupilotmega_demo\Timers.pde" />
+    <None Include="tools\arduppm\workbasket\spektrum_to_ppm_encoder\spektrum_to_ppm_encoder.pde" />
+    <None Include="tools\autotest\web\index.html" />
+    <None Include="tools\autotest\web-firmware\index.html" />
+    <None Include="tools\cpuinfo\CPUInfo.pde" />
+    <None Include="tools\failsafe\Failsafe.pde" />
+    <None Include="tools\hello\Hello.pde" />
+    <None Include="tools\ppm_decoding\PPM_decoding.pde" />
+    <None Include="tools\ppm_decoding\Timers.pde" />
+    <None Include="tools\replay\Parameters.pde" />
+    <None Include="tools\replay\Replay.pde" />
+    <None Include="tools\vartest\Parameters.pde" />
+    <None Include="tools\vartest\VARTest.pde" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="tools\serialproxy\serialproxy\Form1.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tools\serialproxy\serialproxy\properties\Resources.resx">
+      <Filter>Resource Files</Filter>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

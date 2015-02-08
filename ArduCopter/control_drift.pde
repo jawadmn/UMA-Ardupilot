@@ -29,7 +29,7 @@
 // drift_init - initialise drift controller
 static bool drift_init(bool ignore_checks)
 {
-    if (GPS_ok() || ignore_checks) {
+    if (position_ok() || ignore_checks) {
         return true;
     }else{
         return false;
@@ -47,7 +47,7 @@ static void drift_run()
     int16_t pilot_throttle_scaled;
 
     // if not armed or landed and throttle at zero, set throttle to zero and exit immediately
-    if(!motors.armed() || (ap.land_complete && g.rc_3.control_in <= 0)) {
+    if(!motors.armed() || (ap.land_complete && ap.throttle_zero)) {
         attitude_control.relax_bf_rate_controller();
         attitude_control.set_yaw_target_to_current_heading();
         attitude_control.set_throttle_out(0, false);

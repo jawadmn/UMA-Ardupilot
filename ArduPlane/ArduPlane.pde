@@ -1,6 +1,6 @@
 /// -*- tab-width: 4; Mode: C++; c-basic-offset: 4; indent-tabs-mode: nil -*-
 
-#define THISFIRMWARE "ArduPlane V3.2.1alpha2"
+#define THISFIRMWARE "ArduPlane V3.3.0alpha1"
 /*
    Lead developer: Andrew Tridgell
  
@@ -59,6 +59,7 @@
 #include <AP_AutoTune.h>
 #include <GCS.h>
 #include <GCS_MAVLink.h>    // MAVLink GCS definitions
+#include <AP_SerialManager.h>   // Serial manager library
 #include <AP_Mount.h>           // Camera/Antenna mount
 #include <AP_Declination.h> // ArduPilot Mega Declination Helper Library
 #include <DataFlash.h>
@@ -258,6 +259,7 @@ static bool in_calibration;
 ////////////////////////////////////////////////////////////////////////////////
 // GCS selection
 ////////////////////////////////////////////////////////////////////////////////
+static AP_SerialManager serial_manager;
 static const uint8_t num_gcs = MAVLINK_COMM_NUM_BUFFERS;
 static GCS_MAVLINK gcs[MAVLINK_COMM_NUM_BUFFERS];
 
@@ -739,13 +741,7 @@ static uint16_t mainLoop_count;
 #if MOUNT == ENABLED
 // current_loc uses the baro/gps soloution for altitude rather than gps only.
 // mabe one could use current_loc for lat/lon too and eliminate g_gps alltogether?
-static AP_Mount camera_mount(&current_loc, ahrs, 0);
-#endif
-
-#if MOUNT2 == ENABLED
-// current_loc uses the baro/gps soloution for altitude rather than gps only.
-// mabe one could use current_loc for lat/lon too and eliminate g_gps alltogether?
-static AP_Mount camera_mount2(&current_loc, ahrs, 1);
+static AP_Mount camera_mount(ahrs, current_loc);
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -915,11 +911,7 @@ static void update_speed_height(void)
 static void update_mount(void)
 {
 #if MOUNT == ENABLED
-    camera_mount.update_mount_position();
-#endif
-
-#if MOUNT2 == ENABLED
-    camera_mount2.update_mount_position();
+    camera_mount.update();
 #endif
 
 #if CAMERA == ENABLED
@@ -936,7 +928,7 @@ static void update_compass(void)
         ahrs.set_compass(&compass);
         compass.learn_offsets();
         if (should_log(MASK_LOG_COMPASS)) {
-            Log_Write_Compass();
+            DataFlash.Log_Write_Compass(compass);
         }
     } else {
         ahrs.set_compass(NULL);
@@ -1010,13 +1002,6 @@ static void update_aux(void)
     if (!px4io_override_enabled) {
         RC_Channel_aux::enable_aux_servos();
     }
-
-#if MOUNT == ENABLED
-        camera_mount.update_mount_type();
-#endif
-#if MOUNT2 == ENABLED
-        camera_mount2.update_mount_type();
-#endif
 }
 
 static void one_second_loop()

@@ -276,17 +276,17 @@ static void NOINLINE send_location(mavlink_channel_t chan)
     } else {
         fix_time = millis();
     }
-    const Vector3f &vel = gps.velocity();
+    const Vector3f &vel = inertial_nav.get_velocity();
     mavlink_msg_global_position_int_send(
         chan,
         fix_time,
         current_loc.lat,                // in 1E7 degrees
         current_loc.lng,                // in 1E7 degrees
-        gps.location().alt * 10UL,      // millimeters above sea level
+        (ahrs.get_home().alt + current_loc.alt) * 10UL,      // millimeters above sea level
         current_loc.alt * 10,           // millimeters above ground
-        vel.x * 100,  // X speed cm/s (+ve North)
-        vel.y * 100,  // Y speed cm/s (+ve East)
-        vel.x * -100, // Z speed cm/s (+ve up)
+        vel.x,                          // X speed cm/s (+ve North)
+        vel.y,                          // Y speed cm/s (+ve East)
+        vel.z,                          // Z speed cm/s (+ve up)
         ahrs.yaw_sensor);               // compass heading in 1/100 degree
 }
 
@@ -652,6 +652,14 @@ bool GCS_MAVLINK::try_send_message(enum ap_message id)
 #endif
         break;
 
+    case MSG_GIMBAL_REPORT:
+#if MOUNT == ENABLED
+        CHECK_PAYLOAD_SIZE(GIMBAL_REPORT);
+        camera_mount.send_gimbal_report(chan);
+#endif
+        break;
+
+
     case MSG_FENCE_STATUS:
     case MSG_WIND:
         // unused
@@ -879,6 +887,7 @@ GCS_MAVLINK::data_stream_send(void)
 #endif
         send_message(MSG_MOUNT_STATUS);
         send_message(MSG_OPTICAL_FLOW);
+        send_message(MSG_GIMBAL_REPORT);
     }
 }
 
@@ -994,6 +1003,12 @@ void GCS_MAVLINK::handleMessage(mavlink_message_t* msg)
     case MAVLINK_MSG_ID_REQUEST_DATA_STREAM:    // MAV ID: 66
     {
         handle_request_data_stream(msg, false);
+        break;
+    }
+
+    case MAVLINK_MSG_ID_GIMBAL_REPORT:
+    {
+        handle_gimbal_report(camera_mount, msg);
         break;
     }
 
@@ -1129,8 +1144,7 @@ void GCS_MAVLINK::handleMessage(mavlink_message_t* msg)
                 init_barometer(false);
                 result = MAV_RESULT_ACCEPTED;
             } else if (packet.param4 == 1) {
-                trim_radio();
-                result = MAV_RESULT_ACCEPTED;
+                result = MAV_RESULT_UNSUPPORTED;
             } else if (packet.param5 == 1) {
                 // 3d accel calibration
                 float trim_roll, trim_pitch;
@@ -1162,20 +1176,13 @@ void GCS_MAVLINK::handleMessage(mavlink_message_t* msg)
 
         case MAV_CMD_COMPONENT_ARM_DISARM:
             if (packet.param1 == 1.0f) {
-                // run pre_arm_checks and arm_checks and display failures
-                pre_arm_checks(true);
-                if(ap.pre_arm_check && arm_checks(true, true)) {
-                    if (init_arm_motors()) {
-                        result = MAV_RESULT_ACCEPTED;
-                    } else {
-                        AP_Notify::flags.arming_failed = true;  // init_arm_motors function will reset flag back to false
-                        result = MAV_RESULT_UNSUPPORTED;
-                    }
-                }else{
-                    AP_Notify::flags.arming_failed = true;  // init_arm_motors function will reset flag back to false
+                // attempt to arm and return success or failure
+                if (init_arm_motors(false)) {
+                    result = MAV_RESULT_ACCEPTED;
+                } else {
                     result = MAV_RESULT_UNSUPPORTED;
                 }
-            } else if (packet.param1 == 0.0f && (manual_flight_mode(control_mode) || ap.land_complete))  {
+            } else if (packet.param1 == 0.0f && (mode_has_manual_throttle(control_mode) || ap.land_complete))  {
                 init_disarm_motors();
                 result = MAV_RESULT_ACCEPTED;
             } else {

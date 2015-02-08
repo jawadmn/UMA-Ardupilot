@@ -88,6 +88,7 @@
 #include <AP_Mount.h>		// Camera/Antenna mount
 #include <AP_Camera.h>		// Camera triggering
 #include <GCS_MAVLink.h>    // MAVLink GCS definitions
+#include <AP_SerialManager.h>   // Serial manager library
 #include <AP_Airspeed.h>    // needed for AHRS build
 #include <AP_Vehicle.h>     // needed for AHRS build
 #include <DataFlash.h>
@@ -256,7 +257,7 @@ SITL sitl;
 ////////////////////////////////////////////////////////////////////////////////
 // GCS selection
 ////////////////////////////////////////////////////////////////////////////////
-//
+static AP_SerialManager serial_manager;
 static const uint8_t num_gcs = MAVLINK_COMM_NUM_BUFFERS;
 static GCS_MAVLINK gcs[MAVLINK_COMM_NUM_BUFFERS];
 
@@ -286,7 +287,7 @@ static struct 	Location current_loc;
 // --------------------------------------
 #if MOUNT == ENABLED
 // current_loc uses the baro/gps soloution for altitude rather than gps only.
-AP_Mount camera_mount(&current_loc, ahrs, 0);
+AP_Mount camera_mount(ahrs, current_loc);
 #endif
 
 
@@ -616,7 +617,7 @@ static void ahrs_update()
 static void mount_update(void)
 {
 #if MOUNT == ENABLED
-	camera_mount.update_mount_position();
+	camera_mount.update();
 #endif
 #if CAMERA == ENABLED
     camera.trigger_pic_cleanup();
@@ -661,7 +662,7 @@ static void update_compass(void)
         // update offsets
         compass.learn_offsets();
         if (should_log(MASK_LOG_COMPASS)) {
-            Log_Write_Compass();
+            DataFlash.Log_Write_Compass(compass);
         }
     } else {
         ahrs.set_compass(NULL);
@@ -705,10 +706,6 @@ static void update_logging2(void)
 static void update_aux(void)
 {
     RC_Channel_aux::enable_aux_servos();
-        
-#if MOUNT == ENABLED
-    camera_mount.update_mount_type();
-#endif
 }
 
 /*
@@ -728,10 +725,6 @@ static void one_second_loop(void)
 
     // cope with changes to aux functions
     update_aux();
-
-#if MOUNT == ENABLED
-    camera_mount.update_mount_type();
-#endif
 
     // cope with changes to mavlink system ID
     mavlink_system.sysid = g.sysid_this_mav;

@@ -703,6 +703,7 @@ bool GCS_MAVLINK::try_send_message(enum ap_message id)
         break; // just here to prevent a warning
 
     case MSG_LIMITS_STATUS:
+    case MSG_GIMBAL_REPORT:
         // unused
         break;
     }
@@ -1020,7 +1021,7 @@ void GCS_MAVLINK::handleMessage(mavlink_message_t* msg)
                 }
             } else {
                 // send the command to the camera mount
-                camera_mount.set_roi_cmd(&roi_loc);
+                camera_mount.set_roi_target(roi_loc);
             }
             result = MAV_RESULT_ACCEPTED;
             break;
@@ -1045,7 +1046,6 @@ void GCS_MAVLINK::handleMessage(mavlink_message_t* msg)
             } else if (packet.param4 == 1) {
                 trim_radio();
             } 
-#if !defined( __AVR_ATmega1280__ )
             else if (packet.param5 == 1) {
                 float trim_roll, trim_pitch;
                 AP_InertialSensor_UserInteract_MAVLink interact(chan);
@@ -1059,7 +1059,6 @@ void GCS_MAVLINK::handleMessage(mavlink_message_t* msg)
                     ahrs.set_trim(Vector3f(trim_roll, trim_pitch, 0));
                 }
             }
-#endif
             else {
                     send_text_P(SEVERITY_LOW, PSTR("Unsupported preflight calibration"));
             }
@@ -1095,8 +1094,14 @@ void GCS_MAVLINK::handleMessage(mavlink_message_t* msg)
                     if (arming.arming_required() == AP_Arming::YES_ZERO_PWM) {
                         channel_throttle->disable_out();  
                     }
-                    // reset the mission on disarm
-                    mission.stop();
+                    if (control_mode != AUTO) {
+                        // reset the mission on disarm if we are not in auto
+                        mission.reset();
+                    }
+
+                    // suppress the throttle in auto-throttle modes
+                    throttle_suppressed = auto_throttle_mode;
+
                     //only log if disarming was successful
                     Log_Arm_Disarm();
                     result = MAV_RESULT_ACCEPTED;
